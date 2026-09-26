@@ -225,9 +225,41 @@ a {
     background: #f0f1f2;
 }
 
-.icon-edvana {
-    color: #8a6e18;
-    background: #faf6e8;
+.icon-starfin {
+    color: #856d18;
+    background: #f8f4e8;
+}
+
+.icon-rankriot {
+    color: #654d86;
+    background: #f3eff7;
+}
+
+.project-heading-small {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 9px;
+}
+
+.project-heading-small h2 {
+    margin-bottom: 0;
+}
+
+.platform-label {
+    padding: 3px 6px;
+
+    border: 1px solid #dcdfe3;
+    border-radius: 4px;
+
+    color: #777d84;
+    background: #f8f9fa;
+
+    font-size: 0.63rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
 }
 
 
