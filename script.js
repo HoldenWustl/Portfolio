@@ -1,30 +1,41 @@
-// A simple JS script to add a subtle fade-in effect when scrolling
-
 document.addEventListener('DOMContentLoaded', () => {
     const cards = document.querySelectorAll('.project-card');
 
-    // Initial state: slightly transparent and pushed down
-    cards.forEach(card => {
-        card.style.opacity = '0';
-        card.style.transform = 'translateY(20px)';
-        card.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+    const reducedMotion = window.matchMedia(
+        '(prefers-reduced-motion: reduce)'
+    ).matches;
+
+    if (reducedMotion) {
+        return;
+    }
+
+    cards.forEach((card, index) => {
+        card.classList.add('reveal-card');
+
+        card.style.transition = `
+            opacity 450ms ease ${Math.min(index * 35, 175)}ms,
+            transform 450ms ease ${Math.min(index * 35, 175)}ms,
+            border-color 180ms ease,
+            box-shadow 180ms ease
+        `;
     });
 
-    const checkVisibility = () => {
-        const triggerBottom = window.innerHeight * 0.9; // Trigger point
+    const observer = new IntersectionObserver(
+        entries => {
+            entries.forEach(entry => {
+                if (!entry.isIntersecting) {
+                    return;
+                }
 
-        cards.forEach(card => {
-            const cardTop = card.getBoundingClientRect().top;
+                entry.target.classList.add('is-visible');
+                observer.unobserve(entry.target);
+            });
+        },
+        {
+            threshold: 0.08,
+            rootMargin: '0px 0px -30px 0px'
+        }
+    );
 
-            if (cardTop < triggerBottom) {
-                // Make visible and reset position
-                card.style.opacity = '1';
-                card.style.transform = 'translateY(0)';
-            }
-        });
-    };
-
-    // Run on scroll and on initial load
-    window.addEventListener('scroll', checkVisibility);
-    checkVisibility(); // Trigger once immediately
+    cards.forEach(card => observer.observe(card));
 });
