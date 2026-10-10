@@ -1,10 +1,9 @@
-// Real photographs and screenshots are optional.
-// If the file exists, show it; otherwise leave the layout clean and text-only.
-document.querySelectorAll('[data-optional-image]').forEach((img) => {
-  const wrapper = img.closest('[data-optional-wrap]');
-  if (!wrapper) return;
-  const update = () => wrapper.classList.toggle('is-loaded', img.complete && img.naturalWidth > 0);
-  img.addEventListener('load', update);
-  img.addEventListener('error', update);
-  update();
+// Keep the page usable without JavaScript; only improve internal navigation.
+document.querySelectorAll('a[href^="#"]').forEach((link) => {
+  link.addEventListener('click', () => {
+    const target = document.querySelector(link.getAttribute('href'));
+    if (!target) return;
+    if (!target.hasAttribute('tabindex')) target.setAttribute('tabindex', '-1');
+    target.focus({ preventScroll: true });
+  });
 });
