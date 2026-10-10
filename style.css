@@ -34,7 +34,8 @@ h1,h2,h3,h4 { margin: 0; font-weight: normal; }
 .small-label { font-size: 13px; color: var(--secondary); margin-bottom: 14px; }
 .intro h1 { font-family: var(--serif); font-size: clamp(43px, 6vw, 69px); letter-spacing: -.044em; line-height: 1.13; margin-bottom: 25px; }
 .intro-copy > p:not(.small-label) { max-width: 620px; font-size: 16px; line-height: 1.8; color: var(--secondary); margin-top: 14px; }
-.intro-copy .intro-lead { font-size: 20px !important; line-height: 1.55 !important; color: var(--ink) !important; margin-top: 0 !important; }
+.intro-copy .intro-lead { font-size: 21px !important; line-height: 1.55 !important; color: var(--ink) !important; margin-top: 0 !important; }
+.intro-copy .intro-lead strong { font-weight: 650; }
 .intro-copy > p.intro-note { margin-top: 24px; font-size: 14px; color: var(--secondary); }
 .intro-copy a { color: var(--link); }
 .portrait-wrap { display: none; margin: 7px 0 0; }
