@@ -3,14 +3,15 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#faf9f6">
-  <meta name="description" content="Holden Weinberg built PvZH Vault, a Plants vs. Zombies Heroes platform with 355,000 pageviews and nearly 23,000 users, and is building RibbonReady and Starfin.">
+  <meta name="theme-color" content="#fafbfc">
+  <meta name="description" content="Holden Weinberg. Software developer studying CS and Economics at WashU. Creator of PvZH Vault, used by nearly 23,000 players. Building RibbonReady and Starfin.">
   <link rel="canonical" href="https://holdenweinberg.com/">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Holden Weinberg">
-  <meta property="og:description" content="Built PvZH Vault from scratch: 355,000 pageviews and nearly 23,000 users. Also building RibbonReady and Starfin.">
+  <meta property="og:title" content="Holden Weinberg | Software & Projects">
+  <meta property="og:description" content="Creator of PvZH Vault. 355,000 pageviews in four months. Building software for games, restaurants, and the creator economy.">
   <meta property="og:url" content="https://holdenweinberg.com/">
-  <title>Holden Weinberg</title>
+  <title>Holden Weinberg | Software & Projects</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="style.css">
   <script defer src="script.js"></script>
 </head>
@@ -18,143 +19,76 @@
   <a class="skip-link" href="#content">Skip to content</a>
   <div class="site-wrap">
     <header class="site-header" id="top">
-      <a class="site-name" href="#top">Holden Weinberg</a>
-      <nav class="site-nav" aria-label="Main navigation">
-        <a href="#projects">Projects</a>
+      <a class="wordmark" href="#top" aria-label="Holden Weinberg, home">hw<span>.</span></a>
+      <nav aria-label="Main navigation">
+        <a href="#projects">Work</a>
         <a href="#about">About</a>
         <a href="https://github.com/HoldenWustl" target="_blank" rel="noopener noreferrer">GitHub</a>
-        <a href="https://www.linkedin.com/in/holden-weinberg-412073324" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a class="nav-contact" href="https://www.linkedin.com/in/holden-weinberg-412073324" target="_blank" rel="noopener noreferrer">Get in touch</a>
       </nav>
     </header>
-
     <main id="content">
       <section class="intro" aria-labelledby="intro-title">
         <div class="intro-copy">
-          <p class="small-label">Computer Science &amp; Economics · WashU</p>
-          <h1 id="intro-title">I'm Holden Weinberg.</h1>
-          <p class="intro-lead">I built <a href="#pvzh-vault">PvZH Vault</a> from scratch. In just over four months, it's reached <strong>355,000 pageviews and nearly 23,000 users.</strong></p>
-          <p>I've developed everything from screenshot recognition and automatic deck-building algorithms to the data infrastructure and analytics behind the platform.</p>
-          <p>I'm also building <a href="#ribbonready">RibbonReady</a>, which tackles the complicated process of opening a restaurant, and <a href="#starfin">Starfin</a>, an early-stage startup developing software for brands and creator agencies.</p>
-          <p class="intro-note">I study Computer Science and Economics at Washington University in St. Louis. I'm interested in software engineering opportunities for summer 2027, particularly in games.</p>
+          <p class="eyebrow">Software developer · WashU</p>
+          <h1 id="intro-title">Holden<br>Weinberg<span>.</span></h1>
+          <p class="intro-lead">I built a game platform that reached <a href="#pvzh-vault">23,000 players</a> in four months.</p>
+          <p class="intro-note">Now building tools for restaurant owners and the teams behind content creators. Studying Computer Science &amp; Economics at Washington University in St. Louis.</p>
+          <a class="availability" href="https://www.linkedin.com/in/holden-weinberg-412073324" target="_blank" rel="noopener noreferrer"><span aria-hidden="true"></span>Seeking a summer 2027 SWE internship</a>
         </div>
-        <!-- Optional real portrait. Add assets/profile.jpg; it appears automatically. -->
-        <figure class="portrait-wrap optional-image" data-optional-wrap>
-          <img src="assets/profile.jpg" data-optional-image alt="Portrait of Holden Weinberg" width="560" height="680" fetchpriority="high">
+        <figure class="portrait">
+          <img src="assets/profile.jpg" alt="Holden Weinberg on campus" width="800" height="800" fetchpriority="high">
+          <figcaption>Based in St. Louis, from New York.</figcaption>
         </figure>
       </section>
-
-      <section class="section projects" id="projects" aria-labelledby="projects-heading">
-        <div class="section-intro">
-          <h2 id="projects-heading">Projects</h2>
-          <p>Three things I'm spending the most time on.</p>
+      <section class="work" id="projects" aria-labelledby="projects-heading">
+        <div class="section-heading"><h2 id="projects-heading">Selected work</h2><span>2026</span></div>
+        <article class="featured-project" id="pvzh-vault" aria-labelledby="pvzh-heading">
+          <a class="project-visual vault-visual" href="https://pvzhvault.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit PvZH Vault">
+            <div class="browser-frame"><div class="browser-bar"><span class="window-dots" aria-hidden="true"><i></i><i></i><i></i></span><span>pvzhvault.com</span><span class="browser-label">Live site</span></div><img src="assets/pvzh-vault.jpg" alt="PvZH Vault: searchable deck database, hero selection, and a featured deck with card artwork" width="1208" height="770" loading="lazy"></div>
+          </a>
+          <div class="project-heading">
+            <div><p class="eyebrow">01 / Independent project</p><h3 id="pvzh-heading">PvZH Vault</h3><div class="project-links"><a href="https://pvzhvault.com/" target="_blank" rel="noopener noreferrer">Visit website</a><a href="https://github.com/HoldenWustl/pvzh-deck-api" target="_blank" rel="noopener noreferrer">Recognition code</a></div></div>
+            <div class="project-description"><p class="project-lead">From a game I play to a platform thousands use.</p><p>I built PvZH Vault from scratch to make Plants vs. Zombies Heroes decks easier to find and build. It combines a database of 2,000+ decks with screenshot recognition, deck-building algorithms, and tools for the game's community.</p></div>
+          </div>
+          <div class="metrics" aria-label="PvZH Vault Google Analytics, June 1 to October 8, 2026">
+            <div><strong>354,798</strong><span>Pageviews</span></div><div><strong>22,945</strong><span>Unique active users</span></div><div><strong>9,133</strong><span>Peak 28-day active users</span></div>
+          </div>
+          <p class="source-note">Google Analytics · June 1 to October 8, 2026</p>
+          <div class="engineering-notes">
+            <div><h4>Screenshot to editable deck</h4><p>A computer-vision and OCR pipeline identifies cards directly from a player's screenshot.</p></div>
+            <div><h4>Automatic deck building</h4><p>Algorithms account for hero restrictions, card synergies, costs, and strategy.</p></div>
+            <div><h4>Data behind the tools</h4><p>Raw game and deck data powers search, statistics, card analysis, and community guides.</p></div>
+          </div>
+          <p class="legal-note">Independent fan project. Not affiliated with EA or PopCap.</p>
+        </article>
+        <div class="project-pair">
+          <article class="project" id="ribbonready" aria-labelledby="ribbon-heading">
+            <a class="project-visual ribbon-visual" href="https://ribbonready.onrender.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit RibbonReady"><div class="browser-frame"><div class="browser-bar"><span class="window-dots" aria-hidden="true"><i></i><i></i><i></i></span><span>ribbonready.onrender.com</span></div><img src="assets/ribbonready.jpg" alt="RibbonReady's live homepage, with restaurant opening services and an example opening" width="1348" height="926" loading="lazy"></div></a>
+            <div class="project-caption"><p class="eyebrow">02 / Independent project · Prototype</p><h3 id="ribbon-heading">RibbonReady</h3><p class="project-lead">Getting a restaurant through the red tape.</p><p>I'm building software that prepares applications and coordinates the permits, inspections, and approvals needed to open a restaurant in St. Louis.</p><p>It reuses information across filings and tracks which approvals depend on others, with a shared workspace for owners and contractors.</p><a class="text-link" href="https://ribbonready.onrender.com/" target="_blank" rel="noopener noreferrer">Visit website</a><p class="status-note">In development. Some government submissions are simulated.</p></div>
+          </article>
+          <article class="project" id="starfin" aria-labelledby="starfin-heading">
+            <a class="project-visual starfin-visual" href="https://starfin.io/" target="_blank" rel="noopener noreferrer" aria-label="Visit Starfin"><div class="browser-frame"><div class="browser-bar"><span class="window-dots" aria-hidden="true"><i></i><i></i><i></i></span><span>starfin.io</span></div><img src="assets/starfin.jpg" alt="Starfin's live homepage showing its creator payout product preview" width="1348" height="926" loading="lazy"></div></a>
+            <div class="project-caption"><p class="eyebrow">03 / Team project · Early-stage startup</p><h3 id="starfin-heading">Starfin</h3><p class="project-lead">Software for the business behind creators.</p><p>I'm working with a team on tools for brands and talent agencies to manage creator campaigns, invoices, and payments.</p><p>We're developing the product alongside conversations with creators and agencies, including exploring faster payouts tied to performance.</p><a class="text-link" href="https://starfin.io/" target="_blank" rel="noopener noreferrer">Visit website</a><p class="status-note">In development. Screenshot shows the public product preview.</p></div>
+          </article>
         </div>
-
-        <article class="project project-lead" id="pvzh-vault" aria-labelledby="pvzh-heading">
-          <div class="project-identity">
-            <div class="project-meta">Independent project <span aria-hidden="true">·</span> June 2026–present</div>
-            <h3 id="pvzh-heading">PvZH Vault</h3>
-            <p class="project-summary">An independent Plants vs. Zombies Heroes platform with screenshot recognition, deck-building algorithms, game data, and community tools.</p>
-            <div class="project-links">
-              <a href="https://pvzhvault.com/" target="_blank" rel="noopener noreferrer">Visit PvZH Vault</a>
-              <a href="https://github.com/HoldenWustl/pvzh-deck-api" target="_blank" rel="noopener noreferrer">Recognition code</a>
-            </div>
-          </div>
-
-          <div class="pvzh-story">
-            <p>I started PvZH Vault because deck information for the game was scattered and hard to use. I collected, cleaned, and organized raw data into a database of more than 2,000 decks, then built the tools I wanted as a player. Other players started using them too.</p>
-          </div>
-
-          <div class="numbers" aria-label="PvZH Vault usage through October 8, 2026">
-            <div><strong>354,798</strong><span>Pageviews</span></div>
-            <div><strong>22,945</strong><span>Unique active users</span></div>
-            <div><strong>9,133</strong><span>Peak 28-day active users</span></div>
-            <p class="numbers-note">Google Analytics, June 1 – October 8, 2026</p>
-          </div>
-
-          <div class="project-details">
-            <h4>Some of the harder parts</h4>
-            <dl class="detail-list">
-              <div><dt>Screenshot recognition</dt><dd>I built a computer-vision and OCR pipeline that identifies cards in a screenshot and turns them into an editable deck.</dd></div>
-              <div><dt>Automatic deck building</dt><dd>Algorithms that put together decks using hero restrictions, card combinations, costs, and strategy rather than choosing cards at random.</dd></div>
-              <div><dt>Making the data useful</dt><dd>Collecting and transforming raw game and deck data into search, statistics, card synergies, guides, and features for the community.</dd></div>
-            </dl>
-          </div>
-          <!-- Optional genuine screenshot; add assets/pvzh-vault.jpg -->
-          <figure class="project-image optional-image" data-optional-wrap>
-            <img src="assets/pvzh-vault.jpg" data-optional-image alt="Screenshot of the PvZH Vault website" loading="lazy" decoding="async" width="1200" height="760">
-            <figcaption>PvZH Vault</figcaption>
-          </figure>
-          <p class="project-footnote">PvZH Vault is an independent fan project and is not affiliated with EA or PopCap.</p>
-        </article>
-
-        <article class="project" id="ribbonready" aria-labelledby="ribbon-heading">
-          <div class="project-identity">
-            <div class="project-meta">Independent project <span aria-hidden="true">·</span> Working prototype</div>
-            <h3 id="ribbon-heading">RibbonReady</h3>
-            <p class="project-summary">A system for coordinating and automating the filings, permits, and approvals involved in opening a restaurant in St. Louis.</p>
-            <div class="project-links"><a href="https://ribbonready.onrender.com/" target="_blank" rel="noopener noreferrer">Visit RibbonReady</a></div>
-          </div>
-          <div class="project-body">
-            <p>A restaurant opening involves company registration, taxes, permits, inspections, and documents that depend on one another. RibbonReady keeps track of that process and does as much of the paperwork as possible instead of handing someone a checklist.</p>
-            <p>I've been building workflows that reuse information across filings, prepare application documents, handle prerequisites, and let owners work with contractors and other professionals in one place. Some government handoffs are still simulated in development.</p>
-            <p class="project-takeaway"><strong>Interesting engineering problem:</strong> representing a messy real-world process as dependable software, including the steps that can't happen until another approval comes through.</p>
-          </div>
-          <figure class="project-image optional-image" data-optional-wrap>
-            <img src="assets/ribbonready.jpg" data-optional-image alt="Screenshot of the RibbonReady restaurant-opening workspace" loading="lazy" decoding="async" width="1200" height="760">
-            <figcaption>RibbonReady opening workspace</figcaption>
-          </figure>
-        </article>
-
-        <article class="project" id="starfin" aria-labelledby="starfin-heading">
-          <div class="project-identity">
-            <div class="project-meta">Early-stage startup <span aria-hidden="true">·</span> In development</div>
-            <h3 id="starfin-heading">Starfin</h3>
-            <p class="project-summary">An early-stage startup building SaaS for brands and agencies that work with content creators.</p>
-            <div class="project-links"><a href="https://starfin.io/" target="_blank" rel="noopener noreferrer">Visit Starfin</a></div>
-          </div>
-          <div class="project-body">
-            <p>The starting point is a SaaS product for the teams running creator campaigns. We're talking with creators, brands, and agencies to learn where existing tools fall short and which workflows are actually worth improving.</p>
-            <p>There's also a financial side we're interested in: faster payouts for creators and underwriting that better accounts for creator income. Those are goals we're exploring, not features we're claiming to have launched.</p>
-            <p class="project-takeaway"><strong>Current focus:</strong> customer conversations and product development.</p>
-          </div>
-          <figure class="project-image optional-image" data-optional-wrap>
-            <img src="assets/starfin.jpg" data-optional-image alt="Screenshot of the Starfin website" loading="lazy" decoding="async" width="1200" height="760">
-            <figcaption>Starfin</figcaption>
-          </figure>
-        </article>
       </section>
-
-      <section class="section smaller-projects" aria-labelledby="other-heading">
-        <div class="section-intro"><h2 id="other-heading">Other work</h2><p>A few smaller projects and experiments.</p></div>
-        <div class="small-project-list">
-          <a href="https://github.com/HoldenWustl/ChessVision" target="_blank" rel="noopener noreferrer"><strong>Chess Vision</strong><span>Chessboard recognition and analysis</span></a>
-          <a href="https://apps.apple.com/us/app/rankriot/id6763351864" target="_blank" rel="noopener noreferrer"><strong>RankRiot</strong><span>Competitive ranking app on iOS</span></a>
-          <a href="https://github.com/HoldenWustl/ContinuedFractionCalc" target="_blank" rel="noopener noreferrer"><strong>ContinuedFracCalc</strong><span>A tool for exploring continued fractions</span></a>
-          <a href="https://github.com/HoldenWustl/Aletheia" target="_blank" rel="noopener noreferrer"><strong>Aletheia</strong><span>Comparing sources and checking news claims</span></a>
+      <section class="other-work" aria-labelledby="other-heading">
+        <div class="section-heading"><h2 id="other-heading">Also built</h2><span>A few more projects</span></div>
+        <div class="other-grid">
+          <a href="https://github.com/HoldenWustl/ChessVision" target="_blank" rel="noopener noreferrer"><h3>Chess Vision</h3><p>Chessboard recognition and analysis.</p><span>GitHub</span></a>
+          <a href="https://apps.apple.com/us/app/rankriot/id6763351864" target="_blank" rel="noopener noreferrer"><h3>RankRiot</h3><p>A competitive ranking app for iOS.</p><span>App Store</span></a>
+          <a href="https://github.com/HoldenWustl/ContinuedFractionCalc" target="_blank" rel="noopener noreferrer"><h3>ContinuedFracCalc</h3><p>A tool for exploring continued fractions.</p><span>GitHub</span></a>
+          <a href="https://github.com/HoldenWustl/Aletheia" target="_blank" rel="noopener noreferrer"><h3>Aletheia</h3><p>Comparing sources and checking news claims.</p><span>GitHub</span></a>
         </div>
-        <details class="archive">
-          <summary>More projects</summary>
-          <ul>
-            <li><a href="https://github.com/HoldenWustl/Franchise-X" target="_blank" rel="noopener noreferrer">Franchise-X</a> : local lead-generation software</li>
-            <li><a href="https://github.com/HoldenWustl/First-Impression" target="_blank" rel="noopener noreferrer">First Impression</a> : community photo feedback</li>
-            <li><a href="https://github.com/HoldenWustl/BerryRank" target="_blank" rel="noopener noreferrer">BerryRank</a> : games and leaderboards</li>
-            <li><a href="https://github.com/HoldenWustl/Unfiltered" target="_blank" rel="noopener noreferrer">Unfiltered</a> : chronological social platform</li>
-            <li><a href="https://github.com/HoldenWustl/Consensus" target="_blank" rel="noopener noreferrer">Consensus</a> : student voting app</li>
-          </ul>
-        </details>
+        <details class="archive"><summary>More projects</summary><ul><li><a href="https://github.com/HoldenWustl/Franchise-X" target="_blank" rel="noopener noreferrer">Franchise-X</a><span>Local lead-generation software</span></li><li><a href="https://github.com/HoldenWustl/First-Impression" target="_blank" rel="noopener noreferrer">First Impression</a><span>Community photo feedback</span></li><li><a href="https://github.com/HoldenWustl/BerryRank" target="_blank" rel="noopener noreferrer">BerryRank</a><span>Games and leaderboards</span></li><li><a href="https://github.com/HoldenWustl/Unfiltered" target="_blank" rel="noopener noreferrer">Unfiltered</a><span>A chronological social platform</span></li><li><a href="https://github.com/HoldenWustl/Consensus" target="_blank" rel="noopener noreferrer">Consensus</a><span>A student voting app</span></li></ul></details>
       </section>
-
-      <section class="section about" id="about" aria-labelledby="about-heading">
-        <div class="section-intro"><h2 id="about-heading">About me</h2></div>
-        <div class="about-body">
-          <p>My favorite part of building software is owning the whole process: working out the problem, building the systems, putting them in front of people, and seeing what they actually use. PvZH Vault has involved everything from collecting raw data and writing algorithms to responding to feedback from the game's community.</p>
-          <p>Building tools for Plants vs. Zombies Heroes players has made me particularly interested in game systems and the engineering behind games with dedicated communities. Working on PvZ Heroes itself would be a dream opportunity.</p>
-          <p>If you're working on something interesting, or think I might be a fit for your team, I'd love to hear from you.</p>
-          <p class="about-links"><a href="https://www.linkedin.com/in/holden-weinberg-412073324" target="_blank" rel="noopener noreferrer">LinkedIn</a><a href="https://github.com/HoldenWustl" target="_blank" rel="noopener noreferrer">GitHub</a></p>
-        </div>
+      <section class="about" id="about" aria-labelledby="about-heading">
+        <div><p class="eyebrow">A little about me</p><h2 id="about-heading">I like having<br>something to show.</h2></div>
+        <div class="about-copy"><p>I like working on the whole product: figuring out the problem, writing the software, and improving it once people start using it. PvZH Vault has meant doing all of that, from the recognition pipeline to responding to players.</p><p>I'm studying Computer Science and Economics at WashU. Games are a particular interest, both the systems behind them and the communities that keep them going.</p><p class="contact-copy">I'm looking for a summer 2027 software engineering internship, especially in games. If there's a fit, let's talk.</p><div class="contact-links"><a class="button" href="https://www.linkedin.com/in/holden-weinberg-412073324" target="_blank" rel="noopener noreferrer">Connect on LinkedIn</a><a class="text-link" href="https://github.com/HoldenWustl" target="_blank" rel="noopener noreferrer">GitHub</a></div></div>
       </section>
     </main>
-    <footer class="site-footer"><span>© 2026 Holden Weinberg</span><a href="#top">Back to top</a></footer>
+    <footer><span>© 2026 Holden Weinberg</span><a href="#top">Back to top ↑</a></footer>
   </div>
 </body>
 </html>
